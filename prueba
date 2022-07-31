@@ -1,0 +1,16 @@
+let hoy = new Date ();
+let dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado',  Domingo'];
+
+let numeroDiaSemana = hoy.getDay();
+
+console.log('Hoy es: ${dias[numeroDiaSemana]}');
+
+console.log();
+
+let horas = hoy.getHours();
+let minutos = hoy.getMinutes();
+let segundos = hoy.getSeconds();
+
+let jornada = horas >= 12 ? 'PM' : 'AM';
+
+console.log('${horas % 12} : ${minutos} : ${segundos} ${jornada}');
